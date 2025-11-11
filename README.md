@@ -234,8 +234,8 @@ output = model(sample)
 preds = torch.argmax(output, dim=-1).squeeze().cpu().numpy()
 true = y_test[i].numpy()
 
-print('Name: EASWAR R')
-print('Register Number: 212223230053')
+print('Name: SRISHANTH J')
+print('Register Number: 212223240160')
 print("{:<15} {:<10} {}\n{}".format("Word", "True", "Pred", "-" * 40))
 for w_id, true_tag, pred_tag in zip(X_test[i], y_test[i], preds):
     if w_id.item() != word2idx["ENDPAD"]:
@@ -249,12 +249,12 @@ for w_id, true_tag, pred_tag in zip(X_test[i], y_test[i], preds):
 ### OUTPUT:
 
 ## Loss Vs Epoch Plot:
+<img width="869" height="657" alt="Screenshot 2025-11-11 084714" src="https://github.com/user-attachments/assets/0348ae2a-afed-492b-a32f-332803c860f1" />
 
-<img width="730" height="611" alt="image" src="https://github.com/user-attachments/assets/1ecef4d8-214c-4d1b-82f6-7609062f9e9e" />
 
 ### Sample Text Prediction:
+<img width="526" height="524" alt="Screenshot 2025-11-11 084725" src="https://github.com/user-attachments/assets/632dad16-2c81-40a9-b199-194c4723856a" />
 
-<img width="661" height="529" alt="image" src="https://github.com/user-attachments/assets/57f100a7-78c6-48ef-9878-ee59f80c56bb" />
 
 ## RESULT:
 Thus , an LSTM-based model for recognizing the named entities in the text was excuted Successfully.
